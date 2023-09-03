@@ -6,6 +6,7 @@ from loguru import logger
 from utils.constants import POLYGON_MATIC_TOKEN
 from utils.utils import sleep
 
+
 class ClientBase:
     def __init__(self, rpc: str, private_key: str):
         self.w3 = Web3(Web3.HTTPProvider(rpc))
